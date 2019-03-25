@@ -4,10 +4,16 @@
 <p>
 Ce tutoriel s'adresse aux personnes qui ont besoin d'une mise à jour concernant l'utilisation du débogueur en Java. <br>
 On assume ici que le lecteur est familier avec Java et utilise Eclipse comme IDE. <br>
-Ce guide n'est pas exhaustif loin de là, s’il vous faut des ressources supplémentaires stackoverflow est un excellent point de départ. <br>
-Il se peut qu'il y ait des erreurs de grammaire/orthographe.
+Ce guide n'est pas exhaustif loin de là, si vous avez des questions supplémentaires
+[stackoverflow](https://stackoverflow.com/questions/tagged/debugging+java)
+est un excellent point de départ. <br>
+Pour tous les détails la [javadoc](https://docs.oracle.com/cd/E24382_01/user.1112/e17455/run_debug_java.htm#OJDUG2059) est très complète mais plus compliquée à naviguer.<br>
+
+
 </p>
+
 <h2> Débuguer un programme </h2>
+
 <p>
 Quand on lance un programme pour la première fois, il est rare que le résultat soit correct. C'est pourquoi il est intéressant de comprendre comment le débogueur fonctionne.
 </p>
@@ -46,6 +52,7 @@ public class Main {
 	}
 }
 ```
+
 <p>
 Ou l'on veut faire une liste et ensuite calculer la somme.
 quand on l'exécute on obtient ceci :
