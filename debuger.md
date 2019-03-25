@@ -71,7 +71,9 @@ Maintenant que le breakpoint est mis en place, nouv pouvons le lancer. Il suffit
 ![debug_icon.JPG](debug_icon.JPG)<br>
 <h2>Vue sur le debugueur</h2>
 <p>Une fois que nous avons cliquer sur l'icône la vue débug s'ouvre.</p>
+
 ![debug_view.JPG](debug_view.JPG)
+
 <p>
 
 <ol>
@@ -79,12 +81,13 @@ Maintenant que le breakpoint est mis en place, nouv pouvons le lancer. Il suffit
 <li>La vue sur les variables du programme on peut voir les variables du programme comme `pi,multiple_pi`</li>
 
 <li>La vue sur le programme en train d'être exécuter. Notez la ligne qui est mise en évidence est celle ou nous avons mis un breakpoint auparavant.</li>
-<li>Deux icônes. Pour retourner sur le vue précédente cliquez sur celui qui correspond à `Java`</li>
+<li>Deux icônes. Pour retourner sur le vue précédente cliquez sur celui qui correspond à `Java` </li>
 </ol>
 
 Notez que si certains éléments vous manquent, vous pouvez les afficher en faisant `Window > Show View` et sélectionnez ce que vous voulez voir.
 </p>
 <h2> Exécuter le programme </h2>
+
 ![debug_run](run_db.JPG)
 
 <p>
@@ -106,20 +109,28 @@ Nous pouvons donc exécuter le programme étape par étape et voir ce qui est fa
 <p>
 On commence dont à `Step over`. En regardant la vue sur les `Variables` on voit que les éléments sont mis à jour correctement. Il est même possible des les éditer soi-même pour voir si certaines valeurs fonctionnes.
 Par exemple, on pourrait vouloir voir comment le programme réagit quand `i=42`</p>
-![edit_values](edit_values.JPG)<br>
+
+![edit_values](edit_values.JPG)
+
+<br>
 <p>
 Ou encore regarder ce qu'il y a dans la liste `xs`. En parlant de la liste `xs`, observons comment elle se comporte au fur et à mesure de l'exécution du programme.</p>
+
 ![xs_values](xs_values.JPG)
+
 <p>
 Il s'avère que quand on enlève un élément avec `xs.remove(i)` la liste décale les éléments, ainsi on avait un index out of bound car quand on enlèvait les éléments il n'y en avait plus assez !
 </p>
+
 ![elem_removed](elem_removed.JPG)
 
 <p>C'est un peu plus pratique que de devoir lire des trentaines de lignes dans un terminal.</p>
 
 
 <h2> Réparation du programme </h2>
+
 En réparant le programme on a l'output attendu.
+
 ```java
 public static double sum(List<Double> xs) {
   double total = 0;
@@ -131,6 +142,7 @@ public static double sum(List<Double> xs) {
   return total;
 }
 ```
+
 ```
 Total is 141.3716694115407
 ```
