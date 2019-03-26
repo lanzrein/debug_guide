@@ -58,7 +58,7 @@ public class Main {
         List&lt;Double&gt; multiple_pi = new ArrayList&lt;Double&gt;();
 
         for(int i = 0; i &lt; 10; i ++) {
-            multiple_pi.set(i*pi);
+            multiple_pi.add(i*pi);
         }
         System.out.println(&quot;Total is &quot;+sum(multiple_pi));
     }
@@ -78,10 +78,12 @@ Ou l&apos;on veut faire une liste et ensuite calculer la somme.
 quand on l&apos;ex&#xE9;cute on obtient ceci :
 </p>
 
-<pre><code>Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+<pre><code>Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
     at java.util.ArrayList.rangeCheck(Unknown Source)
-    at java.util.ArrayList.set(Unknown Source)
-    at testing.Main.main(Main.java:16)</code></pre><p>On pourrait bien sur commencer &#xE0; mettre des <code>System.out.println(&quot;bla&quot;);</code> partout mais ce n&apos;est pas pratique. Il faudra se rappeler de les supprimer et aussi quand c&apos;est un grand projet &#xE7;a devient difficile.</p>
+    at java.util.ArrayList.remove(Unknown Source)
+    at testing.Main.sum(Main.java:24)
+    at testing.Main.main(Main.java:17)
+</code></pre><p>On pourrait bien sur commencer &#xE0; mettre des <code>System.out.println(&quot;bla&quot;);</code> partout mais ce n&apos;est pas pratique. Il faudra se rappeler de les supprimer et aussi quand c&apos;est un grand projet &#xE7;a devient difficile.</p>
 <h2> Mettre un breakpoint </h2>
 <p>
 Le d&#xE9;bogueur permet de stopper le programme a un moment qui nous int&#xE9;resse afin d&apos;analyser le code.

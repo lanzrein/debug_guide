@@ -36,7 +36,7 @@ public class Main {
 		List<Double> multiple_pi = new ArrayList<Double>();
 
 		for(int i = 0; i < 10; i ++) {
-			multiple_pi.set(i*pi);
+			multiple_pi.add(i*pi);
 		}
 		System.out.println("Total is "+sum(multiple_pi));
 	}
@@ -59,10 +59,12 @@ quand on l'exécute on obtient ceci :
 </p>
 
 ```
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
 	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.set(Unknown Source)
-	at testing.Main.main(Main.java:16)
+	at java.util.ArrayList.remove(Unknown Source)
+	at testing.Main.sum(Main.java:24)
+	at testing.Main.main(Main.java:17)
+
 ```
 On pourrait bien sur commencer à mettre des `System.out.println("bla");` partout mais ce n'est pas pratique. Il faudra se rappeler de les supprimer et aussi quand c'est un grand projet ça devient difficile.
 
